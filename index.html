@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Meta tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fin Meta tags-->
+
+    <!--Meta tags PWA-->
+    <meta name="theme-color" content="#333333" />
+
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-transulcent"
+    />
+    <!--Fin Meta tags PWA-->
+
+    <!--icons-->
+    <link rel="shorcut icon" href="./favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./favicon.png" type="image/png" />
+    <link
+      rel="apple-touch-startup-image"
+      href="./favicon.png"
+      type="image/png"
+    />
+    <!--Fin icons-->
+
+    <!--Manifest-->
+    <link rel="manifest" href="./manifest.json" />
+
+    <!--Fin Manifest-->
+
+    <!--Titles-->
+    <title>React CDN</title>
+    <!--Fin Titles-->
+
+    <!--Scripts-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!--Fin Scripts-->
+
+    <!--Styles-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--Fin Styles-->
+  </head>
+  <body>
+    <div id="root">
+      <script type="text/babel" src="./components/Contador.js"></script>
+      <script type="text/babel" src="./index.js"></script>
+    </div>
+    <script src="./register.js"></script>
+  </body>
+</html>
